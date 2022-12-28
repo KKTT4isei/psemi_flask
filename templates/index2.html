@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"href="/static/css/style.css">
+        <title>Routing</title>
+    </head>
+    <body>
+        <h1 id = "heading">Routing test</h1>
+        <a href ="/routing.html">go to routing.html</a>
+
+        <h1>form送信</h1>
+        <form  method="GET">
+            <input name="data"></input>
+            <button type="submit">送信</button>
+        </form>
+
+        <p>(7)</p>
+        <form action="/get.html"  method="GET">
+            <input name="data"></input>
+            <button type="submit">送信</button>
+        </form>
+
+        <p>(8)</p>
+        <form action="/post.html"  method="POST">
+            <input name="data"></input>
+            <button type="submit">送信</button>
+        </form>
+    </body>
+</html>

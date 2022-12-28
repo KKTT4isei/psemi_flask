@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"href="/static/css/style.css">
+        <title>Hello</title>
+    </head>
+    <body>
+        <h1 id = "heading">Hello</h1>
+        <h2>THIS IS TEST</h2>
+        <h3>KADAI CSS TSURAI</h3>
+        {% for num in array %}
+        <li>{{ num }}</li>
+        {% endfor %}
+        {% for key in sukinano %}
+        <p>{{ key }}: {{ sukinano[key] }}</p>
+        {% endfor %}
+
+        {% if  array[0] == 0 %}
+        <h1>(4)終わり</h1>
+        {% endif %}
+    </body>
+</html>
